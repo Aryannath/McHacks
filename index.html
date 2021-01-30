@@ -21,17 +21,28 @@
       I'm your cool new webpage. 
     </p>
 
-    <div id="map">
+    <div id="map"> </div>
     
+    <script>
+       function initMap() {
+         var location = {lat: 30.316496,78.032188};
+         var map =new google.maps.Map(document.getElementById("map"),{
+           zoom:4,
+           centre: location
+         });
+         var marker = new google.maps.Marker({
+           position: location,
+           map: map
+         })
+       }
+    </script>
     
-    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmxG89FsV-Nv2eYVLTqMsdPrLqmD88RdI&callback=initMap" type="text/javascript"></script>
     
     <div id="qp">
-  
-      
-      <h1>
-             hiiiiii
-      </h1>
+      <h4 style="color:black">
+             Type your prefrence here:-
+      </h4>
       
     </div>
     
