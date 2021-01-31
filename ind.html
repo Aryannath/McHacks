@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
+  
+  <head>
+      <title>Movie-maps</title>
+    
+     <h1>Current shoot locations are only available for INDIA </h1>
+    
+    
+     <div id="map"></div>
+     
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmxG89FsV-Nv2eYVLTqMsdPrLqmD88RdI&callback=initMap&libraries=&v=weekly"
+      defer></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <p>
+       click on the button below to find good shoot locations near you.
+    </p>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 30.316496,lng: 78.032188 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+    <center><a href="near.html"><br><br><br><br><br><button>go to find locations</button></a></center><br><br>
+    <left><a href="index.html"><button>HOME</button></left>
+  </head>
+    
+</html>
