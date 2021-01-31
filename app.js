@@ -13,10 +13,7 @@ let d10= "<h6></h6><h6>best<br></h6>"
 let d11= "<h6></h6><h6>best<br></h6>"
 let d12= "<h6></h6><h6>best<br></h6>"
 
-function sendEmail(){
-    console.log("executed")
-    window.open("mailTo:darryl.wu301@gmail.com")
-}
+
 
 window.addEventListener('load', () =>{
     if(navigator.geolocation){
